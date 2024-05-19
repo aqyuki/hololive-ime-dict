@@ -43,5 +43,3 @@ body:
           required: true
         - label: "単語の説明が正しいか確認しました。"
           required: true
-        - label: "備考がある場合は記載しました。"
-          required: false
