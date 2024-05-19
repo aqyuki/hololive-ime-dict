@@ -1,0 +1,47 @@
+name: 単語の追加
+description: 新しい単語やワードを追加したいときに使用してください。
+title: "word: "
+labels:
+  - "new word"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 単語の追加
+        新しい単語やワードを追加したいときに使用してください。
+        以下のフォームに必要事項を入力してください。
+        なお、この提案が必ずしも実現されるとは限らないことを理解してください。
+        **すでに、提案されている単語の追加を望む場合は、既存の提案にコメントやリアクション等で賛成を示してください。**
+  - type: input
+    id: word
+    attributes:
+      label: 追加したい単語
+      description: 追加したい単語を入力してください。複数ある場合は、わかりやすいようにカンマやスペースなどで区切ってください。
+      placeholder: 単語を入力してください。
+  - type: textarea
+    id: description
+    attributes:
+      label: 単語の説明
+      description: 追加したい単語の説明を入力してください。
+      placeholder: 単語の説明を入力してください。
+  - type: textarea
+    id: note
+    attributes:
+      label: 備考
+      description: その他追加したい情報があれば入力してください。
+      placeholder: 備考を入力してください。
+  - type: checkboxes
+    id: read_before_submit
+    attributes:
+      label: 以下を確認しました
+      description: 以下の内容を確認し、問題がないことを確認してください。
+      options:
+        - label: この提案が必ずしも実現されるとは限らないことを理解しました。
+          required: true
+        - label: "単語が重複していないか確認しました。"
+          required: true
+        - label: "単語の説明が正しいか確認しました。"
+          required: true
+        - label: "備考がある場合は記載しました。"
+          required: false

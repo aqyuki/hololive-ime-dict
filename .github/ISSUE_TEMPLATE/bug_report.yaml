@@ -1,0 +1,32 @@
+name: 辞書に関する問題の報告
+description: 辞書に関する問題を報告するときに使用してください。
+title: "bug: "
+labels:
+  - "bug"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 辞書に関する問題の報告
+        辞書に関する問題を報告するときに使用してください。
+  - type: textarea
+    id: description
+    attributes:
+      label: 問題の概要
+      description: 発生している問題の概要を入力してください。
+      placeholder: 問題について
+  - type: textarea
+    id: note
+    attributes:
+      label: 備考
+      description: その他追加したい情報があれば入力してください。
+      placeholder: 備考を入力してください。
+  - type: checkboxes
+    id: read_before_submit
+    attributes:
+      label: 以下を確認しました
+      description: 以下の内容を確認し、問題がないことを確認してください。
+      options:
+        - label: すでに同様の問題が報告されていないか確認しました。
+          required: true
